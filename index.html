@@ -86,7 +86,14 @@
       .placeholder {
         background-color: rgba(0, 0, 0, 0.158);
         flex: 1;
-        padding: 20px;
+        display: flex;
+        gap: 30px;
+      }
+      .placeholder-section {
+        text-align: center;
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 20px;
       }
       .row-section {
         flex: 1;
@@ -142,8 +149,16 @@
         .row-section {
           flex-direction: column;
         }
-        .row-section .placeholder {
+        .row-section  {
           margin: 20px auto;
+        }
+        .placeholder{
+            flex-direction: column;
+        }
+        .placeholder-section{
+            padding: 5px;
+            margin: 0px;
+
         }
       }
     </style>
@@ -171,20 +186,34 @@
       </div>
       <div>
         <h3 class="roadMap">Road Map</h3>
-        <div class="row-section">
-          <div class="placeholder">
-            <h2>Placeholder 1</h2>
-            <p>Add your content here</p>
+        <div class="placeholder">
+        <div class="placeholder-section">
+            <h2>Phase 1</h2>
+            <ul>
+              <li>imple and easy to distinguish. In a free hour</li>
+              <li>imple and easy to distinguish. In a free hou </li>
+              <li>imple and easy to distinguish. In a free hour </li>
+            </ul>
           </div>
-          <div class="placeholder">
-            <h2>Placeholder 2</h2>
-            <p>Add your content here</p>
+          <div class="placeholder-section">
+            <h2>Phase 2</h2>
+            <ul>
+              <li>imple and easy to distinguish. In a free ho </li>
+              <li>imple and easy to distinguish. In a free hour </li>
+              <li>imple and easy to distinguish. In a free hour </li>
+            </ul>
           </div>
-          <div class="placeholder">
-            <h2>Placeholder 3</h2>
-            <p>Add your content here</p>
+          <div class="placeholder-section">
+            <h2>Phase 3</h2>
+            <ul>
+              <li>imple and easy to distinguish. In a free hour </li>
+              <li>imple and easy to distinguish. In a free hour </li>
+              <li>imple and easy to distinguish. In a free hour </li>
+            </ul>
           </div>
         </div>
+    </div>
+
       </div>
     </div>
     <div class="footer">&copy; 2023 Hand Drawn Memes</div>
