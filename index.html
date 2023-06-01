@@ -23,7 +23,7 @@
       }
       .landing-page {
         flex: 1;
-        background: url("./img/HDM.jpg") no-repeat center center fixed;
+        background: url("./HDM.jpg") no-repeat center center fixed;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -100,6 +100,13 @@
         background-color: rgba(255, 255, 255, 0.8);
         margin: 20px;
       }
+      .placeholder-section ul > li{
+        font-size: 25px;
+      }
+      .placeholder-section h2{
+        font-size: 30px;
+        text-align: left;
+      }
       .row-section {
         flex: 1;
         padding: 20px;
@@ -107,7 +114,9 @@
       }
       .roadMap {
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
+        font-family: "Caveat", cursive;
+
       }
       .footer {
         background-color: rgba(255, 255, 255, 0.8);
@@ -128,14 +137,14 @@
       /* Media Query for Responsive Styles */
       @media screen and (max-width: 480px) {
         .landing-page {
-          background: url("./img/HDM-Mobile.jpeg") no-repeat center center fixed;
+          background: url("./HDM-Mobile.jpeg") no-repeat center center fixed;
           background-size: cover;
         }
 
         .buttons {
           flex-direction: column;
           position: absolute;
-          top: 500px;
+          top: 550px;
         }
         .about-section {
           margin: 25px auto;
@@ -165,6 +174,7 @@
             margin: 0px;
 
         }
+        
       }
     </style>
   </head>
