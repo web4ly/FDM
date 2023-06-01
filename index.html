@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hand Drawn Memes Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans:ital,wght@1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Base Styles */
+      @font-face {
+        font-family: "JMH Typewriter Thin";
+        src: url("./fonts/JMH Typewriter-Thin.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: "Caveat", cursive;
+        font-family: "Fira Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .landing-page {
+        flex: 1;
+        background: url("./img/HDM.jpg") no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        text-align: right;
+      }
+      .header a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #000000;
+      }
+      .about-section {
+        text-align: center;
+        padding: 40px;
+        background-color: transparent;
+        margin: 20px;
+      }
+      .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+      }
+      .buttons a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .footer {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #000000;
+        margin-top: auto;
+      }
+
+      /* Media Query for Responsive Styles */
+      @media screen and (max-width: 480px) {
+        .landing-page {
+          background: url("./img/HDM-Mobile.jpeg") no-repeat center center fixed;
+          background-size: cover;
+        }
+
+        .buttons {
+          flex-direction: column;
+        }
+        .about-section {
+          margin: 20px auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="landing-page">
+      <div class="header">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+      </div>
+      <div class="content">
+        <div class="about-section">
+          <h1>
+            The favourite meme of the community is back on Binance Chain, but
+            this time as a 0 tax token!
+          </h1>
+          <p>Yes, Hand Drawn Memes is back on the BSC chain.</p>
+        </div>
+        <div class="buttons">
+          <a href="#">Buy $HDM</a>
+          <a href="#">Chart</a>
+          <a href="#">Telegram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">&copy; 2023 Hand Drawn Memes</div>
+  </body>
+</html>
