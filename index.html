@@ -3,23 +3,15 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hand Drawn Memes Landing Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fira+Sans:ital,wght@1,500;1,900&display=swap"
-      rel="stylesheet"
-    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Fira+Sans:ital,wght@1,500;1,900&display=swap");
+    </style>
     <style>
       /* Base Styles */
-      @font-face {
-        font-family: "JMH Typewriter Thin";
-        src: url("./fonts/JMH Typewriter-Thin.ttf") format("truetype");
-        font-weight: normal;
-        font-style: normal;
-      }
+
       body {
-        font-family: "Caveat", cursive;
-        font-family: "Fira Sans", sans-serif;
+        /* font-family: "Fira Sans", sans-serif; */
         margin: 0;
         padding: 0;
         display: flex;
@@ -28,12 +20,13 @@
       }
       .landing-page {
         flex: 1;
-        background: url("./HDM.jpg") no-repeat center center fixed;
+        background: url("./img/HDM.jpg") no-repeat center center fixed;
         background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 100vh;
       }
       .header {
         position: fixed;
@@ -50,10 +43,18 @@
         color: #000000;
       }
       .about-section {
+        font-family: "Caveat", cursive;
+
         text-align: center;
         padding: 40px;
         background-color: transparent;
         margin: 20px;
+      }
+      .about-section h1 {
+        font-size: 50px;
+      }
+      .about-section p {
+        font-size: 30px;
       }
       .buttons {
         display: flex;
@@ -70,6 +71,32 @@
         text-decoration: none;
         border-radius: 5px;
       }
+      .placeholder-section {
+        text-align: center;
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.33);
+        margin: 20px;
+      }
+      .row-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .placeholder {
+        background-color: rgba(0, 0, 0, 0.158);
+        flex: 1;
+        padding: 20px;
+      }
+      .row-section {
+        flex: 1;
+        padding: 20px;
+        gap: 20px;
+      }
+      .roadMap {
+        text-align: center;
+        font-size: 30px;
+      }
       .footer {
         background-color: rgba(255, 255, 255, 0.8);
         padding: 20px;
@@ -78,18 +105,44 @@
         color: #000000;
         margin-top: auto;
       }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
 
       /* Media Query for Responsive Styles */
       @media screen and (max-width: 480px) {
         .landing-page {
-          background: url("./HDM-Mobile.jpeg") no-repeat center center fixed;
+          background: url("./img/HDM-Mobile.jpeg") no-repeat center center fixed;
           background-size: cover;
         }
 
         .buttons {
           flex-direction: column;
+          position: absolute;
+          top: 550px;
         }
         .about-section {
+          margin: 25px auto;
+          position: absolute;
+          top: 150px;
+        }
+        .about-section h1 {
+          padding-top: 50px;
+          font-size: 30px;
+        }
+        .about-section p {
+          /* position: absolute; */
+          top: 110px;
+          font-size: 20px;
+        }
+        .row-section {
+          flex-direction: column;
+        }
+        .row-section .placeholder {
           margin: 20px auto;
         }
       }
@@ -114,6 +167,23 @@
           <a href="#">Chart</a>
           <a href="#">Telegram</a>
           <a href="#">Twitter</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="roadMap">Road Map</h3>
+        <div class="row-section">
+          <div class="placeholder">
+            <h2>Placeholder 1</h2>
+            <p>Add your content here</p>
+          </div>
+          <div class="placeholder">
+            <h2>Placeholder 2</h2>
+            <p>Add your content here</p>
+          </div>
+          <div class="placeholder">
+            <h2>Placeholder 3</h2>
+            <p>Add your content here</p>
+          </div>
         </div>
       </div>
     </div>
